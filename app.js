@@ -4,7 +4,7 @@ const connectDB = require("./db/connect");
 require("dotenv").config();
 
 const app = express();
-const port = 10000;
+const port = process.env.PORT || 10000;
 
 //middleware
 app.use(express.static("./public"));
